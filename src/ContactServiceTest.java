@@ -3,7 +3,7 @@ import org.junit.Test;
 
 public class ContactServiceTest {
     @Test
-    public void firstTest() {
+    public void test() {
         Assert.assertTrue(true);
     }
 }

@@ -1,21 +1,21 @@
 /*
-    - The contact object shall have a required unique contact ID string that cannot be longer than 10 characters. The contact ID shall not be null and shall not be updatable.
-    - The contact object shall have a required firstName String field that cannot be longer than 10 characters. The firstName field shall not be null.
-    - The contact object shall have a required lastName String field that cannot be longer than 10 characters. The lastName field shall not be null.
-    - The contact object shall have a required phone String field that must be exactly 10 digits. The phone field shall not be null.
-    - The contact object shall have a required address field that must be no longer than 30 characters. The address field shall not be null.
+    - The contact object shall have a required unique contact ID string that cannot be longer than 10 characters. The contact ID shall not be null and shall not be updatable. Done
+    - The contact object shall have a required firstName String field that cannot be longer than 10 characters. The firstName field shall not be null. Done
+    - The contact object shall have a required lastName String field that cannot be longer than 10 characters. The lastName field shall not be null. Done
+    - The contact object shall have a required phone String field that must be exactly 10 digits. The phone field shall not be null. Done
+    - The contact object shall have a required address field that must be no longer than 30 characters. The address field shall not be null. Done
         */
 
 public class Contact {
 
-    private static final int maxLength = 10; // Maximum length of the strings
+    private static final int maxLength = 10; // Maximum length of the strings.
     private String firstName;
     private String lastName;
     private String phone;
     private String address;
     private final String contactID;
 
-    // Constructor
+    // Constructor method.
     public Contact(String contactID, String firstName, String lastName, String phone, String address) {
         if (contactID == null || contactID.length() > maxLength) {
             throw new IllegalArgumentException("Invalid contact ID.");
@@ -40,14 +40,14 @@ public class Contact {
         this.contactID = contactID;
     }
 
-    // Getters
+    // Getter methods.
     public String getAddress() { return address; }
     public String getFirstName() { return firstName; }
     public String getLastName() { return lastName; }
     public String getPhone() { return phone; }
-    public String getId() { return contactID; }
+    public String getContactID() { return contactID; }
 
-    // Setters
+    // Setter methods.
     // No setter for contactID because it will not be changed.
     public void setFirstName(String firstName) {
         if (firstName != null && firstName.length() <= maxLength) {
