@@ -1,7 +1,7 @@
 import org.junit.Assert;
 import org.junit.Test;
 
-public class ContactServiceTest {
+public class TaskTest {
     @Test
     public void test() {
         Assert.assertTrue(true);

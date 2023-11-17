@@ -26,6 +26,6 @@ The contact service uses in-memory data structures to support storing contacts (
 ## To complete this project, you must submit a Contact Service zipped folder containing the following deliverables:
 
 - Contact.java
-- ContactService.java
-- ContactTest.java
-- ContactServiceTest.java
+- TaskService.java
+- TaskTest.java
+- TaskServiceTest.java

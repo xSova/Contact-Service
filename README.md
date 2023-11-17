@@ -1,7 +1,7 @@
-# ContactService
+# TaskService
 
 ## Overview
-The ContactService application is a Java-based solution designed to manage contact information. This application provides functionalities to add, update, and delete contact details. The service uses in-memory data structures for storage, making it fast and efficient for managing contact data.
+The TaskService application is a Java-based solution designed to manage contact information. This application provides functionalities to add, update, and delete contact details. The service uses in-memory data structures for storage, making it fast and efficient for managing contact data.
 
 ## Features
 - **Add Contacts:** Ability to add new contacts with unique identifiers.
@@ -13,15 +13,15 @@ To run this application, you will need a Java Development Kit (JDK) installed. F
 1. Clone the repository to your local machine.
 2. Navigate to the project directory.
 3. Compile the Java files:
-`javac Contact.java ContactService.java`
+`javac Contact.java TaskService.java`
 4. Run the application (if applicable).
 
 ## Testing
 This project includes JUnit tests to ensure the application functions correctly. To run the tests:
 1. Navigate to the test directory.
 2. Execute the test files:
-`java ContactTest.java`
-`java ContactServiceTest.java`
+`java TaskTest.java`
+`java TaskServiceTest.java`
 
 ## Contact Class
 The Contact class represents individual contact entries with the following fields:
@@ -31,8 +31,8 @@ The Contact class represents individual contact entries with the following field
 - **Phone Number** (required): 10-digit phone number.
 - **Address** (required): Contact's address (max 30 characters).
 
-## ContactService Class
-The ContactService class manages the storage and manipulation of Contact objects. It allows:
+## TaskService Class
+The TaskService class manages the storage and manipulation of Contact objects. It allows:
 - Adding new contacts.
 - Deleting contacts by their ID.
 - Updating contact fields using a map for flexible updates.
