@@ -38,7 +38,7 @@ public class Task {
         if (name != null && name.length() <= 20) {
             this.name = name;
         } else {
-            throw new IllegalArgumentException("Error: Invalid first name.");
+            throw new IllegalArgumentException("Error: Invalid task name.");
         }
     }
 
@@ -46,7 +46,7 @@ public class Task {
         if (description != null && name.length() <= 50) {
             this.description = description;
         } else {
-            throw new IllegalArgumentException("Error: Invalid last name.");
+            throw new IllegalArgumentException("Error: Invalid description.");
         }
     }
 }
